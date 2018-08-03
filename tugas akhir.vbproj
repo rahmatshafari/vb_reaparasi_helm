@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52F76141-CA57-4DED-8256-4271A5372F0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>tugas_akhir.My.MyApplication</StartupObject>
+    <RootNamespace>tugas_akhir</RootNamespace>
+    <AssemblyName>tugas akhir</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>tugas akhir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>tugas akhir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data.Designer.vb">
+      <DependentUpon>data.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pengambilan.Designer.vb">
+      <DependentUpon>pengambilan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pengambilan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riwayat.Designer.vb">
+      <DependentUpon>riwayat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="riwayat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selesai.Designer.vb">
+      <DependentUpon>selesai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selesai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi.Designer.vb">
+      <DependentUpon>transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.vb">
+      <DependentUpon>user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data.resx">
+      <DependentUpon>data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pengambilan.resx">
+      <DependentUpon>pengambilan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="riwayat.resx">
+      <DependentUpon>riwayat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selesai.resx">
+      <DependentUpon>selesai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi.resx">
+      <DependentUpon>transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-skull-wearing-motocross-helmet-racing-team-646691554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helm.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hm.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NeXT_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pake helm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4176d5da276701d245d8b42d48d406ee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partners.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYT-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NHK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo HIU Helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoBMC.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suomy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-gm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snell.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INK1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caberg-helmets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l67137-nolan-logo-76419.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoei_logo_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoei_logo_2_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zeus Helmet Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector_hessian_symbol_by_jailboticus-d71u4k4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize-four-directions-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize-four-directions-filled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4176d5da276701d245d8b42d48d406ee1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet-836324_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
